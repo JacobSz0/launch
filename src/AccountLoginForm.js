@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useToken } from "./Authentication.js";
 import { useNavigate, NavLink } from 'react-router-dom';
 
-function TherapistLoginForm() {
+function AccountLoginForm() {
   const { login } = useToken();
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
@@ -77,4 +77,4 @@ function TherapistLoginForm() {
   );
 }
 
-export default TherapistLoginForm;
+export default AccountLoginForm;

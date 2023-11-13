@@ -34,8 +34,10 @@ function AccountSignupForm() {
     data.username = username;
     data.email = email;
     data.password = password;
+    data.role_id = 1;
+    console.log(data)
 
-    const url = `${process.env.REACT_APP_THERAPYHUB_API_HOST}api/accounts`;
+    const url = `${process.env.REACT_APP_DATABASE}accounts`;
 
     const fetchConfig = {
       method: "POST",
